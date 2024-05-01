@@ -28,7 +28,10 @@ docker container ls -a (show both running and stopped containers)
 docker container stop 
 
 docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
-
+docker pull mysql
+docker search mysql  (mysql is an official image)
+docker image history {imageId}
+docker image inspect {imageId}
 
 
 
