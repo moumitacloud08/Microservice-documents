@@ -1,0 +1,11 @@
+
+Distributed Tracing
+
+ Spring Boot 2  : Sleuth (Tracing Configuration) 
+                > Brave (Tracer library) 
+                > Zipkin 
+Spring boot 3 :  Micrometer 
+               > OpenTelemetry 
+               > Zipkin 
+
+
