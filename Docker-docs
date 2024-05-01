@@ -12,7 +12,15 @@ docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 Application URI - 
 http://localhost:5000/hello-world
- http://localhost:5000/hello-world
+http://localhost:5000/hello-world
+
+docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE 
+docker logs 7f901ee45c278293ba1bb5dd7f5aa12feba9d1ebc85b7654f12a541ef5bd02bd
+docker logs -f 7f901ee45c278293ba1bb5dd7f5aa12feba9d1ebc85b7654f12a541ef5bd02bd
+
+docker container ls
+
+
 
 
 
