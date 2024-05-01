@@ -17,6 +17,7 @@ http://localhost:5000/hello-world
 docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE 
 docker logs {containerId}
 docker logs -f {containerId}
+Application(in28min/todo-rest-api-h2:1.0.0.RELEASE) URL :- http://localhost:5000/hello-world
 
 docker container ls
 docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE 
@@ -57,5 +58,8 @@ docker run -p 5001:5000 -m 512m --cpu-quota 5000 -d in28min/todo-rest-api-h2:1.0
 
 docker container logs -f {containerId}
 docker system df (It show all the different thing that you docker daemon manages)
+
+docker run -p 9411:9411 openzipkin/zipkin:2.23
+zipkin URL:- http://localhost:9411/zipkin
 
 
