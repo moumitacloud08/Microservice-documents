@@ -2,3 +2,17 @@ docker --version
 docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 Docker Registry -> https://hub.docker.com
+Docker Registry(repository path)=> https://hub.docker.com/r/in28min/todo-rest-api-h2
+
+Image-> static template(A set of bytes)
+Container-> running version of an image
+
+docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE 
+[-p {HostPort}:{ContainerPort} ]
+
+Application URI - 
+http://localhost:5000/hello-world
+ http://localhost:5000/hello-world
+
+
+
