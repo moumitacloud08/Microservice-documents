@@ -1,1 +1,4 @@
 docker --version
+docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+Docker Registry -> https://hub.docker.com
