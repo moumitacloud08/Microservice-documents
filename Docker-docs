@@ -15,13 +15,13 @@ http://localhost:5000/hello-world
 http://localhost:5000/hello-world
 
 docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE 
-docker logs 7f901ee45c278293ba1bb5dd7f5aa12feba9d1ebc85b7654f12a541ef5bd02bd
-docker logs -f 7f901ee45c278293ba1bb5dd7f5aa12feba9d1ebc85b7654f12a541ef5bd02bd
+docker logs {containerId}
+docker logs -f {containerId}
 
 docker container ls
 docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE 
-docker logs ca3c6aa7f984637006cb0869dde8bf8ae083f07b1c3b606705e15e8ae38b147c
-docker logs -f ca3c6aa7f984637006cb0869dde8bf8ae083f07b1c3b606705e15e8ae38b147c
+docker logs {containerId}
+docker logs -f {containerId}
 
 docker images
 docker container ls -a (show both running and stopped containers)
@@ -32,6 +32,15 @@ docker pull mysql
 docker search mysql  (mysql is an official image)
 docker image history {imageId}
 docker image inspect {imageId}
+docker image remove {imageId}
+
+docker container pause {containerId}
+docker container unpause {containerId}
+docker container inspect {containerId}
+docker container prune  (remove all stopped containers)
+docker container stop {containerId}
+
+stop => SIGTERM => graceful shutdown
 
 
 
