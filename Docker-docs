@@ -19,6 +19,15 @@ docker logs 7f901ee45c278293ba1bb5dd7f5aa12feba9d1ebc85b7654f12a541ef5bd02bd
 docker logs -f 7f901ee45c278293ba1bb5dd7f5aa12feba9d1ebc85b7654f12a541ef5bd02bd
 
 docker container ls
+docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE 
+docker logs ca3c6aa7f984637006cb0869dde8bf8ae083f07b1c3b606705e15e8ae38b147c
+docker logs -f ca3c6aa7f984637006cb0869dde8bf8ae083f07b1c3b606705e15e8ae38b147c
+
+docker images
+docker container ls -a (show both running and stopped containers)
+docker container stop 
+
+docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
 
 
 
