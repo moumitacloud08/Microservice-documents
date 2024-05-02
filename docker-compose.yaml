@@ -11,6 +11,8 @@ services:
       - currency-network
     dependes_on:
       - naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
 
       
    naming-server:
